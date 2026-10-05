@@ -1,9 +1,10 @@
 ---
 id: TASK-6
 title: Level 2 cost-optimised strategy and comparison
-status: To Do
+status: Done
 assignee: []
 created_date: '2026-10-05 11:14'
+updated_date: '2026-10-05 11:24'
 labels:
   - level-2
 dependencies:
@@ -20,6 +21,6 @@ Minimise charging cost, compare against Level 1.
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 Both spec examples pass
-- [ ] #2 Comparison reports cost difference and insight
+- [x] #1 Both spec examples pass
+- [x] #2 Comparison reports cost difference and insight
 <!-- AC:END -->
