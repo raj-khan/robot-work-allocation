@@ -1,9 +1,10 @@
 ---
 id: TASK-2
 title: Team agent guidelines
-status: To Do
+status: Done
 assignee: []
 created_date: '2026-10-05 11:14'
+updated_date: '2026-10-05 11:17'
 labels:
   - setup
 dependencies:
@@ -20,6 +21,6 @@ AGENTS.md as single source of truth, CLAUDE.md and shared .claude settings, PR t
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 AGENTS.md documents workflow, conventions and commands
-- [ ] #2 Shared Claude settings with safe permissions and format hook
+- [x] #1 AGENTS.md documents workflow, conventions and commands
+- [x] #2 Shared Claude settings with safe permissions and format hook
 <!-- AC:END -->
