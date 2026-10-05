@@ -1,9 +1,10 @@
 ---
 id: TASK-9
 title: Allocation summary and efficiency metrics
-status: To Do
+status: Done
 assignee: []
 created_date: '2026-10-05 11:14'
+updated_date: '2026-10-05 11:28'
 labels:
   - bonus
 dependencies:
@@ -20,5 +21,5 @@ Bonus: total robots, total cost, average and per type utilisation.
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 Summary and per type utilisation reported after multi-client runs
+- [x] #1 Summary and per type utilisation reported after multi-client runs
 <!-- AC:END -->
