@@ -1,9 +1,10 @@
 ---
 id: TASK-5
 title: Level 1 category distribution strategy
-status: To Do
+status: Done
 assignee: []
 created_date: '2026-10-05 11:14'
+updated_date: '2026-10-05 11:23'
 labels:
   - level-1
 dependencies:
@@ -20,6 +21,6 @@ At least one robot of each type, then minimise excess hours.
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 Spec examples for 16, 17, 21, 24 hours pass
-- [ ] #2 Missing category returns the impossible-allocation error
+- [x] #1 Spec examples for 16, 17, 21, 24 hours pass
+- [x] #2 Missing category returns the impossible-allocation error
 <!-- AC:END -->
