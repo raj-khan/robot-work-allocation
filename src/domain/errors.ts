@@ -6,6 +6,7 @@ const MESSAGES = {
   INVALID_WORK_HOURS: 'Work hours must be a positive integer.',
   INVALID_ROBOT_COUNT: 'Robot counts must be non-negative integers.',
   UNKNOWN_ROBOT_TYPE: 'Unknown robot type',
+  WORK_HOURS_TOO_LARGE: 'Work hours are above the supported maximum',
 } as const;
 
 export type AllocationErrorCode = keyof typeof MESSAGES;
