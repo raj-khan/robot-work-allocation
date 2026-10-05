@@ -1,9 +1,10 @@
 ---
 id: TASK-4
 title: Generic fleet optimiser
-status: To Do
+status: Done
 assignee: []
 created_date: '2026-10-05 11:14'
+updated_date: '2026-10-05 11:21'
 labels:
   - domain
 dependencies:
@@ -20,7 +21,7 @@ Bounded knapsack over any robot catalog, ranked by a pluggable objective.
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 Works for any number of robot types
-- [ ] #2 Property tests prove it matches brute force
-- [ ] #3 Deterministic tie-breaking
+- [x] #1 Works for any number of robot types
+- [x] #2 Property tests prove it matches brute force
+- [x] #3 Deterministic tie-breaking
 <!-- AC:END -->
