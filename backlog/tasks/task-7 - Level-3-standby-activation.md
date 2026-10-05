@@ -1,9 +1,10 @@
 ---
 id: TASK-7
 title: Level 3 standby activation
-status: To Do
+status: Done
 assignee: []
 created_date: '2026-10-05 11:14'
+updated_date: '2026-10-05 11:25'
 labels:
   - level-3
 dependencies:
@@ -20,6 +21,6 @@ Use all active robots, cover the shortfall with the cheapest standby robots.
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 Spec example (21h vs 16h capacity) picks Charlie: 1
-- [ ] #2 Finite warehouse stock is respected when given
+- [x] #1 Spec example (21h vs 16h capacity) picks Charlie: 1
+- [x] #2 Finite warehouse stock is respected when given
 <!-- AC:END -->
