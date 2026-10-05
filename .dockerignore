@@ -1,0 +1,13 @@
+node_modules
+dist
+coverage
+.git
+.github
+.husky
+.claude
+.vscode
+backlog
+docs
+*.md
+**/*.test.ts
+src/test-support

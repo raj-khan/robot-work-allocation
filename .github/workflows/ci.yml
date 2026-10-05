@@ -21,3 +21,14 @@ jobs:
       - run: npm ci
       - run: npm run check
       - run: npm run build
+
+  docker:
+    runs-on: ubuntu-latest
+    needs: check
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t robot-allocate .
+      - name: Smoke test
+        run: |
+          docker run --rm robot-allocate --bravo 1 --charlie 1 --delta 1 --hours 21 \
+            | grep -q 'Charlie: 1 - cost \$3'
