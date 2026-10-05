@@ -1,9 +1,10 @@
 ---
 id: TASK-10
 title: Terminal interface
-status: To Do
+status: Done
 assignee: []
 created_date: '2026-10-05 11:14'
+updated_date: '2026-10-05 11:33'
 labels:
   - cli
 dependencies:
@@ -20,7 +21,7 @@ Interactive and piped input, CLI flags, formatted output, pino logging to stderr
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 Spec prompts and output format reproduced
-- [ ] #2 Invalid input shows the spec error messages
-- [ ] #3 Works with piped stdin and flags
+- [x] #1 Spec prompts and output format reproduced
+- [x] #2 Invalid input shows the spec error messages
+- [x] #3 Works with piped stdin and flags
 <!-- AC:END -->
