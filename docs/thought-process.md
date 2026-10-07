@@ -24,7 +24,7 @@ I split the work into 11 Backlog.md tasks, one PR each, in dependency order: too
 2. **Prove it, don't just test it.** A brute-force oracle tries every combination on small fleets. fast-check runs hundreds of random fleets through both and asserts they agree.
 3. **Spec ties are real.** Two brief examples only pass with the right tie-break: Level 2's 6h (prefer less excess) and Level 1's 24h (prefer cheaper). I made both explicit in the objectives.
 4. **Keep I/O at the edge.** The domain has no `console`, no `process` and no logger. The CLI validates input with zod, calls one service and formats the result. So almost every test is fast and mock-free.
-5. **Follow the brief where it is specific, document where it is not.** The README explains my choices for standby stock size, utilisation and the Level 3 rule.
+5. **Follow the brief where it is specific, document where it is not.** The README lists my choices for standby stock size, utilisation and the Level 3 rule.
 
 ## Things that surprised me
 
