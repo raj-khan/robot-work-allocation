@@ -4,27 +4,24 @@
 
 Claude Code (Claude Opus 5.5) in the terminal.
 
-## How I used it
+## How I used them
 
-As a pair programmer, inside guardrails I set up first:
+I treated Claude Code as a pair programmer and set the direction and guardrails myself:
 
-- `AGENTS.md` sets the rules: layer boundaries, test-first, commit style.
-- Hooks and CI enforce them: strict TypeScript, type-aware ESLint, coverage thresholds, commit-message checks.
-- Backlog.md tasks keep each session scoped to one PR.
-
-Per task: agree on the behaviour, write failing tests, watch them fail, implement, run `npm run check`, review the diff, commit in small steps.
+- I chose this challenge over Passenger Resource Management, picked the stack (TypeScript, zod, pino, Vitest, Docker) and asked for SOLID, TDD, strict typing and small PRs.
+- I asked it to find existing public solutions first, so we could see the common gaps and aim higher.
+- Work ran through Backlog.md: one task, one branch, one PR, with `AGENTS.md`, git hooks and CI enforcing the rules on the agent as well as on me.
+- Per task: failing tests first, then the implementation, then `npm run check`, then small commits.
+- I reviewed the PRs and merged them in order.
 
 ## What was AI-assisted
 
-- Surveying existing public solutions and summarising their gaps.
-- Drafting most of the code and tests to my direction, then iterating on the design with me (catalog as data, knapsack optimiser, Result type, standby warehouse).
-- Tooling config (ESLint, Vitest, Husky, CI, Docker).
-- First drafts of these docs.
-
-I own every decision and reviewed every line, especially the assumptions, the tie-break rules against the brief's examples, and the Level 3 trade-off.
+Most of it. Claude Code wrote the bulk of the code, tests, tooling config and docs. I directed it and made or approved the decisions: catalog as data, the knapsack optimiser, tie-break rules, standby assumptions and the Level 3 trade-off. I'm responsible for all of it and can walk through any line.
 
 ## Workflow worth sharing
 
-- Make the AI prove correctness, not claim it. The brute-force oracle and property tests mean I don't have to trust the optimiser.
-- Give the agent the same guardrails as a new teammate. The commit hook rejects the agent's bad messages just as it would mine.
-- Keep tasks small. One backlog task per session gives focused diffs and easy reviews.
+- Make the AI prove correctness, not claim it. A brute-force oracle and property tests check the optimiser.
+- Give the agent the same guardrails as a teammate. The commit hook rejects the agent's bad messages just as it would mine.
+- Keep tasks small. One backlog task per PR gives focused diffs and easy reviews.
+
+My opening prompt, roughly: "Go with robot, use TypeScript, follow industry standard. Check GitHub for existing solutions and do better. Private repo, Backlog.md tasks, PR by PR. SOLID, TDD, hooks, team Claude config, AGENTS.md, README, thought-process doc, .gitignore, zod, pino, pipe, strict TypeScript, lint, Docker, short human comments."
